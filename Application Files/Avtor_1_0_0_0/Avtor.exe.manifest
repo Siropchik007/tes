@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Avtor.exe" version="1.0.0.0" publicKeyToken="efa58b6087bef9a6" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Avtor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Avtor.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avtor.exe" size="16808">
+      <assemblyIdentity name="Avtor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GMNl5kUFLPDGTrJAoi3/fYvvHwfacuf4p9UUxDeLpxs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="5225168">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nCD7KthqdgsMauvZMByQCYkdAq4UcgqTkmwLU1uK0Js=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ru\EntityFramework.resources.dll" size="501456">
+      <assemblyIdentity name="EntityFramework.resources" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="ru" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HeToYwsrFcDybiQM5EVxXH6AJ2JRQQsKGyA5tpD3Rn0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="622288">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4OEmw7inupUB0D+Z1Upcu9F0vOy2FwCYq0zBIZ8n+TM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Avtor.exe.config" size="1404">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>L58S1gjgX9rvsfUb8TxpdbipRZbUbHiwI9G881HUXi0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model1.Context.tt" size="22930">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iH6jRm/ArXOO/wVogKb8ZOaRJ6DvCC6vOswudwQkDnQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Model1.tt" size="25275">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CabSpKm6yYNT6twBZzKHKM3v3aBYMgNzK0uSDYpHoWw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ADMIN\stask" issuerKeyHash="59275a76f367669483afda2c7e7157a5aca83507" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Qjw0vU5DijAW5iY3IZIfdVbwkVVTNXutXyW+XM7GYgU=</DigestValue></Reference></SignedInfo><SignatureValue>xCBtnG8ArFdf2+Pv7N4gqbY61cV/efmhmQGMdignDRnCw/ywGKFg4MEKyqClvPypmXCfWROLgF0Gt89grWlvXPcLFp1DA72XLWWvLfqoiE4NPCY0EQWmp1gaj1F0z3JiWAdetqtDlphMI/O8P7inGJ6ADmy3UVEXqbvIKKVdW+s=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yKqHzoPf4HtuCQfhWDD+1hePYcM5XIe19Wx7DiKcp0oAweZgNU16AAFPqlvgRcnW1ZRlQJrGlCLZH7SVRpwXkq70AbZwOmYHRXop4pSsE0g+ilMod1owj2AFtdeTCZ/4SHbpv+AxGEVY4l0w08P4dGyTKUFf0tIR7s9j1ojZktE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0562c6ce5cbe255fad7b35535591f056751f92213726e616308a434ebd343c42" Description="" Url=""><as:assemblyIdentity name="Avtor.exe" version="1.0.0.0" publicKeyToken="efa58b6087bef9a6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ADMIN\stask</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>E4skZZVRz+wkZpZyjiH2iijYRnWe38WCpST2qopjwoE=</DigestValue></Reference></SignedInfo><SignatureValue>XZz8RP4W7jf0DZSHTl/zW5y02aDXpD+VO8mjKRN10FWHgyTMPSIGJp1uWlbt1kfL6jQdoIIQYG402y+RIKqVPvXyIStfwxz4LZCEIhWnjO/kSqlUm7B2wc0sGBQTYeGppLBUdemR8yh0chWY89L5KcTrsMVTLw25Yo+Poc2fNes=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yKqHzoPf4HtuCQfhWDD+1hePYcM5XIe19Wx7DiKcp0oAweZgNU16AAFPqlvgRcnW1ZRlQJrGlCLZH7SVRpwXkq70AbZwOmYHRXop4pSsE0g+ilMod1owj2AFtdeTCZ/4SHbpv+AxGEVY4l0w08P4dGyTKUFf0tIR7s9j1ojZktE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQFfUS6HwIgrhJF9PvscSqkzANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYAQQBEAE0ASQBOAFwAcwB0AGEAcwBrMB4XDTIyMDYyMDIwMzkwOFoXDTIzMDYyMTAyMzkwOFowITEfMB0GA1UEAx4WAEEARABNAEkATgBcAHMAdABhAHMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAyKqHzoPf4HtuCQfhWDD+1hePYcM5XIe19Wx7DiKcp0oAweZgNU16AAFPqlvgRcnW1ZRlQJrGlCLZH7SVRpwXkq70AbZwOmYHRXop4pSsE0g+ilMod1owj2AFtdeTCZ/4SHbpv+AxGEVY4l0w08P4dGyTKUFf0tIR7s9j1ojZktECAwEAATANBgkqhkiG9w0BAQsFAAOBgQC/QzTw2nL84h9toCnlnjmYbEjtDd/qxkzcc8AJa1kdpgypLk0PoNAPeY4ph6BhHG5oDm03+3vuNMVwpM6nFE+Vb3QdLpdm5LHQZtWUtxO3371u15l3TavXe1BBiNGBOJjoEesG1wuDFkihmTGMWlc23KyYlWYqiLd2Qi7IfkDyDw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
